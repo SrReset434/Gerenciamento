@@ -4,10 +4,42 @@ body{
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    background-color: black;
 }
 header{
     text-align: center;
-    background: linear-gradient(to top, #ffffff, #cccccc, #000000);
+}
+div#hn{
+    background: linear-gradient(to bottom, #ffffff, #cccccc, #000000);
+}
+div#hn > nav > p{
+    padding-left: 8px;
+}
+.a::before{
+    content: '[Link] ';
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+}
+.a::after{
+    content: ' [Link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+}
+.a{
+    text-decoration: none;
+}
+.a:visited{
+    color: blue;
+}
+.a:active{
+    color: yellow;
+}
+.a:hover{
+    text-decoration: underline;
+    color: purple; 
+    scale: 1.5px;
 }
 header > h1{
     padding-bottom: 0.5px;
